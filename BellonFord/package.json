@@ -1,0 +1,16 @@
+{
+    "name": "bellonford",
+    "version": "1.0.0",
+    "description": "a simple web server",
+    "main": "bellonfordserver.js",
+    "dependencies": {
+        "express": "^4.17.1",
+        "underscore": "^1.9.1"
+    },
+    "devDependencies": {},
+    "scripts": {
+        "start": "node bellonfordserver.js"
+    },
+    "author": "paper rabbit labs",
+    "license": "isc"
+}

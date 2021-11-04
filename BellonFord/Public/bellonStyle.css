@@ -1,0 +1,412 @@
+/* Phone */
+@media all and (min-width: 300px) {
+  /* Adjusts the position of the header closer to the top of the page*/
+  .responsive {
+    position: relative;
+    top: -100px;
+    margin-bottom: 50px;
+    z-index: -5;
+    display: block;
+  }
+  /* adjusts the Bellon Ford Logo*/
+  .bellonScale {
+    margin-top: 50px;
+    max-width: 40%;
+    max-height: 40%;
+
+    align-items: left;
+  }
+  /* adjusts  the Ghosts logo*/
+  .mottoStyle {
+    max-width: 40%;
+    max-height: 40%;
+    display: block;
+    margin-left: 5%;
+    margin-top: 2%;
+    margin-bottom: 2px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 5px black;
+  }
+  /* Adjusts the size of the Lab pic in home*/
+  .theLabSize {
+    max-width: 60%;
+    max-height: 60%;
+  }
+  /* puts a box around the content area*/
+  .contentBox {
+    margin-top: 25%;
+
+    min-height: 1500px;
+    min-width: 150%;
+    border: 3px solid rgb(80, 77, 77);
+    border-radius: 5px;
+    box-shadow: 10px 10px 5px grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  /* adjusts the head in the  content box*/
+  .headFormat {
+    display: flex;
+    justify-content: center;
+    text-shadow: 5px 2px 2px #6d6f70;
+    text-decoration: underline;
+  }
+  /*adjusts and formats the text in the boxes*/
+  .hisTxt {
+    margin-left: 30px;
+    max-width: 80%;
+    font-size: 20px;
+  }
+  /* centers content*/
+  .align-center {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: auto;
+    width: 100%;
+    margin-right: 5px;
+  }
+  /*places border around content*/
+  .border {
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px grey;
+    border-radius: 2%;
+  }
+  /*prevents text from exploding outside of the content box and places a 
+    scroll slider to the right of the content box*/
+  .overScroll {
+    display: flex;
+    flex: 1;
+    min-width: 0;
+    text-overflow: ellipsis;
+    box-sizing: border-box;
+    overflow: hidden;
+    overflow-y: scroll;
+    float: right;
+  }
+  /*adjusts the main content area.....may cause CONFLICTS */
+  .mContent {
+    margin-right: 150px;
+    min-width: 200%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    padding: 15px 0px 0px 20px;
+  }
+  div.btn-group {
+    margin-top: 100px;
+    min-width: 800px;
+    min-height: 80%;
+    z-index: 0;
+  }
+  .btn-group button {
+    /*     TOP  RIGHT BOTTOM  LEFT   */
+    z-index: 1;
+    margin-left: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: rgb(61, 83, 105);
+    border: 2px solid rgb(3, 3, 3); /* Black border */
+    border-radius: 18% 5% 18% 5%;
+    color: rgb(247, 245, 245); /* White text */
+    padding: 20px 20px; /* Some padding */
+    font-size: 70%;
+    font-style: oblique;
+    box-shadow: 5px 5px 2px #141414;
+    cursor: pointer; /* Pointer/hand icon */
+    height: 18%;
+    width: 15%; /* Set a width if needed */
+    display: inline-flex; /* Make the buttons appear below each other */
+  }
+  /* Add a background color on hover */
+  /*.btn-group button:hover {
+    background-color: #7ac6fc;
+  }
+  */
+  /*this section lays out the grid area of the page
+   and overall placement of those items*/
+  body {
+    background-color: #fbfeff;
+    margin: 20px;
+    padding: auto;
+    font-size: 2.5em;
+    display: grid;
+    grid-template-columns: 100px;
+    grid-template-rows: auto 300px 500px 100px 100px;
+    grid-template-areas:
+      "head"
+      "nav "
+      "main"
+      "aside"
+      "foot";
+  }
+
+  header {
+    z-index: -5;
+    margin-top: auto;
+    display: grid;
+    grid-area: head;
+    background: transparent;
+    margin-bottom: 20px;
+  }
+
+  nav {
+    z-index: 1;
+    top: 150px;
+    min-width: 200px;
+    max-height: 150px;
+    grid-area: nav;
+    background: transparent;
+  }
+
+  main {
+    display: flex;
+    margin-top: 150px;
+    align-content: left;
+    grid-area: main;
+  }
+
+  aside {
+    display: grid;
+    margin-top: 50px;
+    grid-area: aside;
+    background: goldenrod;
+  }
+
+  footer {
+    display: grid;
+    grid-area: foot;
+    background: thistle;
+    font-size: large;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  }
+  /*END OF THE PAGE LAYOUT FOR MIN 300PX*/
+
+  /* Tablet */
+  @media all and (min-width: 600px) {
+    /* Adjusts the position of the header closer to the top of the page*/
+    .responsive {
+      position: relative;
+      top: -40px;
+      margin-bottom: auto;
+    }
+    /* adjusts the Bellon Ford Logo*/
+    .bellonScale {
+      margin-top: 0px;
+      max-width: 55%;
+      max-height: 55%;
+      display: flex;
+      align-items: left;
+    }
+    /* adjusts  the Ghosts logo*/
+    .mottoStyle {
+      max-width: 40%;
+      max-height: 40%;
+      display: flex;
+      margin-left: 5%;
+      margin-top: 4%;
+      border-radius: 5px;
+      box-shadow: 5px 5px 5px black;
+    }
+    /* puts a box around the content area*/
+    .contentBox {
+      margin-left: 10px;
+      border: 3px solid rgb(80, 77, 77);
+      border-radius: 5px;
+      box-shadow: 10px 10px 5px grey;
+    }
+    /* adjusts the head in the  content box*/
+    .headFormat {
+      display: flex;
+      justify-content: center;
+      text-shadow: 5px 2px 2px #6d6f70;
+      text-decoration: underline;
+    }
+    /*adjusts and formats the text in the boxes*/
+    .hisTxt {
+      margin-left: 30px;
+      max-width: 80%;
+      font-size: 20px;
+    }
+    /* centers content*/
+    .align-center {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      height: auto;
+      width: 100%;
+      margin-right: 5px;
+    }
+    /*places border around content*/
+    .border {
+      border: 1px solid black;
+      box-shadow: 10px 10px 5px grey;
+      border-radius: 2%;
+    }
+    /*prevents text from exploding outside of the content box and places a 
+    scroll slider to the right of the content box*/
+    .overScroll {
+      display: flexbox;
+      flex: 1;
+      min-width: 0;
+      text-overflow: ellipsis;
+      box-sizing: border-box;
+      overflow: hidden;
+      overflow-y: scroll;
+      float: right;
+    }
+    /*adjusts the main content area.....may cause CONFLICTS */
+    .mContent {
+      margin-right: 150px;
+      min-width: 400px;
+      display: flex;
+      justify-content: left;
+      align-items: center;
+      padding: 15px 0px 0px 20px;
+      flex-direction: column;
+      flex: 1 0 auto;
+    }
+    /*formats the NAVAGATION BUTTONS*/
+    .btn-group button {
+      /*     TOP  RIGHT BOTTOM  LEFT   */
+      margin: 15px 25px 18px 15px;
+      background-color: rgb(61, 83, 105);
+      border: 2px solid rgb(3, 3, 3); /* Black border */
+      border-radius: 18% 5% 18% 5%;
+      color: rgb(247, 245, 245); /* White text */
+      padding: 2px 2px; /* Some padding */
+      font-size: large;
+      font-style: oblique;
+      box-shadow: 5px 5px 2px #b9b5b5;
+      cursor: pointer; /* Pointer/hand icon */
+      height: 40px;
+      width: 80px; /* Set a width if needed */
+      display: flex; /* Make the buttons appear below each other */
+      justify-content: center;
+      align-items: center;
+    }
+    /* Add a background color on hover */
+    .btn-group button:hover {
+      background-color: #7ac6fc;
+    }
+    /*this section lays out the grid area of the page
+   and overall placement of those items*/
+    header {
+      margin-top: auto;
+      display: flex;
+      grid-area: head;
+      background: transparent;
+      align-items: top;
+    }
+
+    nav {
+      border-style: ridge;
+      border-color: #6d6f70;
+      border-radius: 5%;
+      border-width: 5px;
+      box-shadow: inset 10px;
+      max-width: 200px;
+      margin-top: 50px;
+      margin-bottom: 30px;
+      grid-area: nav;
+      background: linear-gradient(
+        to right,
+        rgb(110, 162, 240) 20%,
+        rgb(20, 20, 20)
+      );
+    }
+
+    main {
+      margin-right: 10px;
+      margin-top: 10%;
+      margin-left: 10%;
+      grid-area: main;
+      width: auto;
+    }
+
+    aside {
+      grid-area: aside;
+      background: goldenrod;
+    }
+
+    footer {
+      grid-area: foot;
+      background: thistle;
+      font-size: large;
+      font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+    }
+  }
+  body {
+    grid-template-columns: auto auto;
+    grid-template-rows: 150px auto auto 100px 100px;
+    grid-template-areas:
+      "head head"
+      "nav main"
+      "nav main"
+      "aside aside"
+      "foot foot";
+  }
+
+  /* Desktop */
+  @media all and (min-width: 800px) {
+    .homebox {
+      margin-top: 80px;
+    }
+    .mottoStyle {
+      max-width: 40%;
+      max-height: 40%;
+      display: flexbox;
+      margin-left: 15px;
+      margin-right: 15px;
+      border-radius: 5px;
+      box-shadow: 10px 10px 5px black;
+    }
+    header {
+      margin-top: -10px;
+      align-items: top;
+    }
+    aside {
+      margin-left: 30px;
+    }
+    nav {
+      margin-top: 100px;
+    }
+    footer {
+      display: flex;
+      margin-top: 50px;
+    }
+    body {
+      grid-template-columns: 200px auto 200px;
+      grid-template-rows: 200px 800px 100px;
+      grid-template-areas:
+        "head head head"
+        "nav main aside"
+        "foot foot foot";
+    }
+  }
+  /* Large Desktop */
+
+  @media all and (min-width: 1200px) {
+    .mottoStyle {
+      max-width: 50%;
+      max-height: 50%;
+      display: flexbox;
+      margin-left: 150px;
+      margin-right: 15px;
+      border-radius: 5px;
+      box-shadow: 10px 10px 5px black;
+    }
+    aside {
+      margin-left: 30px;
+    }
+    body {
+      grid-template-columns: 200px auto 200px;
+      grid-template-rows: 200px 800px 100px;
+      grid-template-areas:
+        "head head head"
+        "nav main aside"
+        "foot foot foot";
+    }
+  }
+}

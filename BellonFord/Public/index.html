@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script src="bellonAction.js"></script>
+  <link rel="stylesheet" href="testBell.css" />
+  <title>Bellon Ford</title>
+
+  <head class="">
+    <header class="responsive">
+      <img
+        srcset="/images/bellon300.png 300w, /images/bellon800.png 800w"
+        sizes="(max-width:800px) 500px,800px"
+        src="/images/bellon600.png"
+        class="bellonScale"
+        id="bellonLogo"
+      />
+    </header>
+  </head>
+
+  <body>
+    <nav id="container">
+      <div class="btn-group btnFormat">
+        <!--The ID's are used for JS Behavior do not modify-->
+        <button id="home" class="home">Home</button>
+        <button id="history" class="history">History</button>
+        <button id="video" class="video">Video</button>
+        <button id="tours" class="tours">Tours</button>
+        <button id="socials" class="socials">Socials</button>
+        <button id="about" class="about">About</button>
+        <button id="contact" class="contact">Contact</button>
+      </div>
+    </nav>
+    <article class="contentBox">
+      <!-------------HOME BOX HOME BOX ------------------------------------->
+      <div id="homeBox" class="responsive">
+        <p id="altText">Welcome to Bellon Ford</p>
+        <div>
+          <img
+            src="/images/thelab.png"
+            class="border theLabSize"
+            id="theLab"
+            alt="The Lab & Friendly Ghosts"
+          />
+
+          <img src="/images/BlockGhosty.png" class="mottoStyle" id="ghosty" />
+        </div>
+      </div>
+      <!--HISTORY BOX ------------------- HISTORY BOX----------------------->
+      <div id="historyBox" class="overScroll">
+        <h1 class="headFormat"><strong> History</strong></h1>
+        <p class="hisTxt">
+          The mention of ghosts or apparations goes well back into history with
+          evidence of their existence being noted by the Egyptians and even the
+          ancient Sumerians. Though little is known about these apparations they
+          have gotten much attention throughout the annals of time. With his
+          writing of
+          <a href="https://www.worldhistory.org/ghost/"
+            >Ghosts in the Ancient World</a
+          >
+          Joshua J. Mark (2014) gives a detailed account of how our ancestors
+          viewed these otherworldly deities. From being improperly buried to
+          murder being the cause of their demise; these beings have captured out
+          attention since time immemorial. To say they do not exist would be
+          contrary to the evidence presented otherwise.
+        </p>
+      </div>
+      <!----------------VIDEO BOX VIDEO BOX---------------------------------->
+      <div id="videoBox" class="">
+        <div id="vidPLay" class="videoStyle">
+          <img
+            src="images/vidPlaceHold.png"
+            id="vPlaceHold"
+            class="videoStyle border"
+          />
+          <iframe
+            id="vid2"
+            src="https://www.youtube.com/embed/Xbr0AM-5VQU"
+            title="YouTube video player"
+            frameborder="1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            id="vid3"
+            src="https://www.youtube.com/embed/px_6ta4bMw8"
+            title="YouTube video player"
+            frameborder="1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+          <iframe
+            id="vid4"
+            src="https://www.youtube.com/embed/Unzc731iCUY"
+            title="YouTube video player"
+            frameborder="1"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+
+          <!--The ICON section of the grid box         -->
+          <div id="grid-container" class="vidBlock border overScroll">
+            <img src="/images/videoBlock.png" id="ico25" class="icon" />
+            <img src="/images/videoBlock.png" id="ico35" class="icon" />
+            <img src="/images/videoBlock.png" id="ico45" class="icon" />
+            <img src="/images/videoBlock.png" id="ico55" class="icon" />
+            <img src="/images/videoBlock.png" id="ico65" class="icon" />
+            <img src="/images/videoBlock.png" id="ico75" class="icon" />
+          </div>
+        </div>
+      </div>
+      <!----------------------------TOURS BOX TOURS BUTTON------------------>
+      <div id="toursBox" class="overScroll">tours Content</div>
+      <!-- SOCIALS BOX SOCIALS BUTTON-->
+      <div id="socialsBox" class="overScroll">Socials Content</div>
+      <!--ABOUT BOX ABOUT BUTTON-->
+      <div id="aboutBox" class="overScroll">About Content</div>
+      <!--CONTACT BOX CONTACT BUTTON-->
+      <div id="contactBox" class="overScroll">Contact Content</div>
+    </article>
+    <aside>Aside</aside>
+    <footer>&copy; Paper Rabbit Labs&trade;</footer>
+  </body>
+</html>
